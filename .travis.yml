@@ -1,0 +1,8 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t wendellmedina/centos-custom .
+  - docker images wendellmedina/centos-custom
+
